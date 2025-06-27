@@ -1,0 +1,30 @@
+{
+  "name": "shophub-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "echo 'No build step needed for Node.js backend'"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": ["ecommerce", "shop", "api", "nodejs", "express"],
+  "author": "ShopHub Team",
+  "license": "ISC",
+  "description": "Backend API for ShopHub e-commerce platform",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.7.0",
+    "nodemon": "^3.1.7",
+    "redis": "^4.7.0",
+    "socket.io": "^4.8.1"
+  }
+}

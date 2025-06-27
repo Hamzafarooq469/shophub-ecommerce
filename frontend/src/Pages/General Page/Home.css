@@ -1,0 +1,80 @@
+
+/* Home.css */
+
+.home-container {
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center container */
+    padding: 20px; /* Add padding */
+}
+
+.product-card {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner spacing */
+    margin-bottom: 20px; /* Space between cards */
+    background-color: #f9f9f9; /* Light background */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.product-card h2 {
+    margin: 0 0 10px; /* Adjust header margin */
+    color: #333; /* Darker text color */
+}
+
+.product-card p {
+    margin: 5px 0; /* Spacing between paragraphs */
+}
+
+.button-group {
+    display: flex; /* Flex layout for buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space above button group */
+}
+
+.product-card button {
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded buttons */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 14px; /* Button text size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.product-card button:first-child {
+    background-color: #007bff; /* Blue color for Get Details */
+    color: white; /* White text */
+}
+
+.product-card button:first-child:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.product-card button:nth-child(2) {
+    background-color: #28a745; /* Green color for Add to Cart */
+    color: white; /* White text */
+}
+
+.product-card button:nth-child(2):hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.product-card button:last-child {
+    background-color: #ffc107; /* Yellow color for Go to Cart */
+    color: white; /* White text */
+}
+
+.product-card button:last-child:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column; /* Stack buttons on small screens */
+        gap: 5px; /* Smaller gap for stacked buttons */
+    }
+}

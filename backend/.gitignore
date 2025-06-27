@@ -1,0 +1,13 @@
+# Node.js modules
+node_modules/
+
+# Environment variable files
+/config/.env
+/config/db.js
+
+# Firebase configuration files
+/firebase/firebaseCredentials.json
+/firebase/firebaseAdmin.js  # Only if it contains sensitive information
+
+# Other sensitive files
+*.log
