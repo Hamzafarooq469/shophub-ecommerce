@@ -3,9 +3,16 @@ const dotenv = require("dotenv")
 const connectDb = require("./config/db")
 const cors = require("cors")
 const cookieParser = require("cookie-parser")
-dotenv.config({
-    path: "./config/.env"
-})
+
+// Load environment variables - use local file for development, system env for production
+if (process.env.NODE_ENV !== 'production') {
+    dotenv.config({
+        path: "./config/.env"
+    })
+} else {
+    // In production (like Render), use system environment variables
+    dotenv.config()
+}
 
 connectDb()
 const app = express()
