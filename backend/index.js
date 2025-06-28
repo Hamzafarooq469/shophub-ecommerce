@@ -23,7 +23,8 @@ const allowedOrigins = [
     'http://localhost:3000',
     'https://shophub-frontend.vercel.app',
     'https://shophub.vercel.app',
-    'https://shophub.netlify.app'
+    'https://shophub.netlify.app',
+    'https://shophub-ecommerce-self.vercel.app'  // Add your Vercel domain
 ];
 
 app.use(cors({
@@ -34,6 +35,7 @@ app.use(cors({
         if (allowedOrigins.indexOf(origin) !== -1) {
             callback(null, true);
         } else {
+            console.log('CORS blocked origin:', origin);
             callback(new Error('Not allowed by CORS'));
         }
     },
